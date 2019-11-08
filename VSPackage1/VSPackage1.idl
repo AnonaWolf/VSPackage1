@@ -1,0 +1,40 @@
+﻿// VSPackage1.idl : IDL source for VSPackage1.dll
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (VSPackage1.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+midl_pragma warning (disable : 2015)
+import "vsshell.idl";
+midl_pragma warning (default : 2015)
+
+//standard dispids
+#define DISPID_Name                     (-800)
+#define DISPID_Delete                   (-801)
+#define DISPID_Object                   (-802)
+#define DISPID_Parent                   (-803)
+#define DISPID_NewEnum					(-4)
+#define DISPID_Value					(0)
+
+[
+	uuid(95fc06e1-cd17-415a-b365-1dbd2cca062e),
+	version(1.0),
+	helpstring("VSPackage1 1.0 Type Library")
+]
+library VSPackage1Lib
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	[
+		uuid(410816eb-ec2f-4fc5-a8b9-a85032d00cd2),
+		helpstring("VSPackage1 Package")
+	]
+	coclass VSPackage1Package
+	{
+		[default] interface IVsPackage;
+	};
+};

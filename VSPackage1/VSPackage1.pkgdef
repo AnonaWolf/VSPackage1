@@ -1,0 +1,34 @@
+﻿[$RootKey$\Packages\{410816eb-ec2f-4fc5-a8b9-a85032d00cd2}]
+@="VSPackage1 Package"
+"InprocServer32"="$PackageFolder$\VSPackage1.dll"
+"CompanyName"="VSPackage"
+"ProductName"="Package Name 1"
+"ProductVersion"="1.0"
+
+[$RootKey$\Packages\{410816eb-ec2f-4fc5-a8b9-a85032d00cd2}\SatelliteDll]
+"DllName"="VSPackage1UI.dll"
+"Path"="$PackageFolder$"
+
+[$RootKey$\Menus]
+"{410816eb-ec2f-4fc5-a8b9-a85032d00cd2}"=", 1000, 1"
+
+[$RootKey$\InstalledProducts\VSPackage1]
+@="#100"
+"Package"="{410816eb-ec2f-4fc5-a8b9-a85032d00cd2}"
+"ProductDetails"="#102"
+"LogoID"="#400"
+"PID"="1.0"
+"UseInterface"=dword:00000000
+
+
+[$RootKey$\ToolWindows\{ccb3f6f0-ce7c-47e1-acbd-cd76b4feb7b9}]
+@="{410816eb-ec2f-4fc5-a8b9-a85032d00cd2}"
+"Name"="My Tool Window"
+"Float"="100,100,300,400"
+"Orientation"="Right"
+"Style"="Float"
+"Window"="{4A9B7E51-AA16-11D0-A8C5-00A0C921A4D2}"
+//The GUID above is the TaskList GUID. You can replace it with any tool 
+//  window GUID to have the new window dock to that tool window.
+
+
